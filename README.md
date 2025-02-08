@@ -38,6 +38,35 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
     npm run dev
     ```
 
+## Uso 
+
+Accede al endpoint de la API GraphQL en `http://localhost:4000/graphql`. Puedes usar herramientas como GraphiQL, Postman o Thunder Client para enviar consultas.
+
+### Realizar Peticiones con Thunder Client
+
+1.  **Crear una Nueva Petición**:
+    *   Abre Thunder Client o postman.
+    *   Haz clic en "New Request" (Nueva Petición).
+2.  **Configurar la Petición**:
+    *   **Método**: Selecciona "POST". Todas las peticiones GraphQL utilizan el método HTTP POST.
+    *   **URL**: Ingresa `http://localhost:4000/graphql`.
+    *   **Cuerpo (Body)**: Cambia el tipo de cuerpo a "GraphQL".
+3.  **Escribe tu Consulta GraphQL**:
+    *   En el editor de consultas GraphQL, ingresa tu consulta. Por ejemplo:
+
+        ```
+        query {
+          characters {
+            id
+            name
+            status
+            species
+          }
+        }
+        ```
+
+
+
 
 Para interactuar con AppRickFront (front-end) se debe clonar el siguiente repositorio:
 Git:
